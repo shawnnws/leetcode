@@ -1,8 +1,7 @@
 package leetcode;
 
-public class CountPrefixes {
-    public int countPrefixes(String[] words, String pref) {
-
+public class CountWordsWithGivenPrefix {
+    public int prefixCount(String[] words, String pref) {
         int count = 0;
 
         for (String word: words) {
@@ -14,12 +13,11 @@ public class CountPrefixes {
     }
 
     public static void main(String[] args) {
-
         String[] words = {"pay","attention","practice","attend"};
-        String prefix = "at";
+        String pref = "at";
 
-        CountPrefixes solution = new CountPrefixes();
-        int answer = solution.countPrefixes(words, prefix);
+        CountWordsWithGivenPrefix solution = new CountWordsWithGivenPrefix();
+        int answer = solution.prefixCount(words, pref);
         System.out.println(answer);
     }
 }
