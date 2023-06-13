@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.ArrayList;
 
-public class DiStringMatch {
+public class    DiStringMatch {
     public int[] diStringMatch(String s) {
         int numIntegers = s.length() + 1;               //numIntegers = 4 + 1 = 5
         ArrayList<Integer> availNums = new ArrayList<>();
