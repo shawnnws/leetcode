@@ -12,14 +12,11 @@ public class KthDistinctString {
         String kthString = "";
 
         for (int i = 0; i < arr.length; i++) {
-            if (count.size() == 0) {
+            if (!count.containsKey(arr[i])) {
                 count.put(arr[i], 1);
-            }
-            else if (count.containsKey(arr[i])) {
-                count.put(arr[i],count.get(arr[i]) + 1);
             }
             else {
-                count.put(arr[i], 1);
+                count.put(arr[i],count.get(arr[i]) + 1);
             }
         }
 
@@ -37,6 +34,15 @@ public class KthDistinctString {
         }
 
         return kthString;
+    }
+
+    public static void main(String[] args) {
+        String[] arr = {"a","b","a"};
+        int k = 3;
+
+        KthDistinctString solution = new KthDistinctString();
+        String answer = solution.kthDistinct(arr, k);
+        System.out.println(answer);
     }
 }
 
