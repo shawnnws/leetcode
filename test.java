@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.Arrays;
+
 public class test {
     public static void main(String[] args) {
         double x = 12;
@@ -10,6 +12,8 @@ public class test {
         float g = 2.015f;
         String example = "you.me.";
         example = example.replace(".", "");
+        String s = "hello";
+        char[] sArray = s.toCharArray();
 
         System.out.println(x);
         System.out.println(y);
@@ -18,5 +22,7 @@ public class test {
         System.out.println(j);
         System.out.println(g);
         System.out.println(example);
+        System.out.println(Arrays.toString(sArray));
+        System.out.println((int) sArray[1]);
     }
 }
