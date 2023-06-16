@@ -5,18 +5,23 @@
 //
 //public class FindCommonCharacters {
 //
-//    public List<String> commonChars(String[] words) {
-//
-//        HashMap<String, Integer> charCount = new HashMap<String, Integer>();
-//        for (int i = 0; i < words[0].length(); i++) {
-//            if (!charCount.containsKey(words[0].substring(i, i + 1))) {
-//                charCount.put(words[0].substring(i, i + 1), 1);
-//            }
-//            else {
-//                charCount.put(words[0].substring(i, i + 1), charCount.get(words[0].substring(i + 1)) + 1);
+//    public String shortestString(String[] words) {
+//        String shortestString = words[0];
+//        for (int i=1; i < words.length; i++) {
+//            if (words[i].length() < shortestString.length()) {
+//                shortestString = words[i];
 //            }
 //        }
+//        return shortestString;
+//    }
 //
+//    public List<String> commonChars(String[] words) {
 //
+//        String stringToUse = shortestString(words);
+//        HashMap<String, Integer> charMap = new HashMap<String, Integer>();
+//
+//        for (int i=0; i < stringToUse.length(); i++) {
+//
+//        }
 //    }
 //}

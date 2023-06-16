@@ -8,7 +8,8 @@ public class test {
         Double k = 0.012345;
         float j = 0.012345f;
         float g = 2.015f;
-        String example = "    ";
+        String example = "you.me.";
+        example = example.replace(".", "");
 
         System.out.println(x);
         System.out.println(y);
@@ -16,6 +17,6 @@ public class test {
         System.out.println(k);
         System.out.println(j);
         System.out.println(g);
-        System.out.println(example.length());
+        System.out.println(example);
     }
 }

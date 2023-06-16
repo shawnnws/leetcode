@@ -1,6 +1,6 @@
 package leetcode;
 
-public class MaxValueOfString {
+public class MaxValueOfStringInArray {
 
     boolean onlyNumeric(String element) {
         boolean isNumeric = true;
@@ -38,7 +38,7 @@ public class MaxValueOfString {
 
     public static void main(String[] args) {
         String[] strs = {"alic3","bob","3","4","00009",""};
-        MaxValueOfString solution = new MaxValueOfString();
+        MaxValueOfStringInArray solution = new MaxValueOfStringInArray();
         System.out.println(solution.maximumValue(strs));
     }
 }
