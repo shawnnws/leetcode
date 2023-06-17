@@ -3,6 +3,8 @@ package leetcode;
 public class EquivalentStringArrays {
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
 
+        // Instantiate a StringBuilder for each string array.
+        // Iterate through each word and connect them together using the StringBuilder.
         StringBuilder firstWord = new StringBuilder();
         StringBuilder secondWord = new StringBuilder();
 
