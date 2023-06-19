@@ -21,7 +21,7 @@ public class test {
         System.out.println(k);
         System.out.println(j);
         System.out.println(g);
-        System.out.println(example);
+        System.out.println(example.contains("me"));
         System.out.println(Arrays.toString(sArray));
         System.out.println((int) sArray[1]);
     }
