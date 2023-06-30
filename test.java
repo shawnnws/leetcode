@@ -11,7 +11,7 @@ public class test {
         float j = 0.012345f;
         float g = 2.015f;
         String example = "you.me.";
-        example = example.replace(".", "");
+        String[] words = {"hi", "hello", "bye", "goodbye"};
         String s = "hello";
         char[] sArray = s.toCharArray();
 
