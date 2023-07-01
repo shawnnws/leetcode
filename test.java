@@ -13,6 +13,7 @@ public class test {
         String example = "you.me.";
         String[] words = {"hi", "hello", "bye", "goodbye"};
         String s = "hello";
+        String a = "bye";
         char[] sArray = s.toCharArray();
 
         System.out.println(x);
@@ -21,7 +22,7 @@ public class test {
         System.out.println(k);
         System.out.println(j);
         System.out.println(g);
-        System.out.println();
+        System.out.println(s + a);
         System.out.println(Arrays.toString(sArray));
         System.out.println((int) sArray[1]);
     }
